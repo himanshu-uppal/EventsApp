@@ -1,3 +1,7 @@
 Run 
+-- installing bootstrap ---
 npm install ngf-bootstrap --save
+
+--creating enw component
+ng g c events-list
 
