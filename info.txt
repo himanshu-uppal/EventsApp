@@ -12,3 +12,25 @@ hiding something completely from DOM - use ngIf
 but if you want something to hide and show frequently then use - [hidden] of html 
 
 hide and show conditional content using ngSwitch
+
+
+--- Styling using ngClass ----
+[ngClass]="{className:condition,className:condition}"
+
+if classes and conditions are complex and large
+
+use method insted ,
+
+>>>
+check conditions and fill variables like result1(boolean), result2(boolean)
+and return the {className:result1,className:result2} in method 
+OR
+>>
+if(condition)
+return [class1,class2]
+else 
+return 
+[class1]
+
+--- Styling using ngStyle ----
+[ngStyle]={'propertyName1':condition ? style1 :style2,'propertyName2':.....}
