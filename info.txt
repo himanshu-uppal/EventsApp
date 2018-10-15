@@ -54,3 +54,12 @@ two main -- canActivate and can Deactivate
 we can use a function or a user service for this fucntionality
 
 should use service because the advantage of injectability 
+
+
+------ Lazy loading Feature Module ----
+----making a feature module // rather than app module ----
+
+imports CommonModule instaed of BrowserModule
+imports RouterModule.forChild() instead of RouterModule.forRoot()
+
+module is loaded only when the module rote is requested and thus improves performance
