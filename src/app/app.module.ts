@@ -7,14 +7,16 @@ import { EventThumbnailComponent } from './event-thumbnail/event-thumbnail.compo
 import {EventService} from './shared/services/event.service'
 import {ToastrService} from './shared/services/toastr.service';
 import { EventDetailsComponent } from './event-details/event-details.component';
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+import { CreateEventComponent } from './create-event/create-event.component'
 
 @NgModule({
   declarations: [
     EventsAppComponent,
     EventsListComponent,
     EventThumbnailComponent,
-    EventDetailsComponent
+    EventDetailsComponent,
+    CreateEventComponent
   ],
   imports: [
     BrowserModule,
