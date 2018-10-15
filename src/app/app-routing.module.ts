@@ -9,7 +9,7 @@ import { E404Component } from './error/e404.component';
 import { EventRouteActivator } from './event-details/event-route-activator.service';
 
 const routes: Routes = [
-  {path:'events/new',component:CreateEventComponent},
+  {path:'events/new',component:CreateEventComponent,canDeactivate:['canDeactivateCreateEvent']},
   {path:'events',component:EventsListComponent},
   {path:'events/:id',component:EventDetailsComponent,canActivate:[EventRouteActivator]},
   {path:'404',component:E404Component},
