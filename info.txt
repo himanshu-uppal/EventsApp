@@ -46,3 +46,11 @@ load these files in angular in angular.json
 
 ------ Routing -----
 ng generate module app-routing --flat --module=app 
+
+
+--- guarding in routing ----
+two main -- canActivate and can Deactivate
+
+we can use a function or a user service for this fucntionality
+
+should use service because the advantage of injectability 
