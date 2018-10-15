@@ -1,3 +1,3 @@
-<h2 [routerLink]="['/events']">All Events</h2>
-<h2 [routerLink]="['/events/new']">Create New Event</h2>
+<h2 [routerLink]="['/events']" routerLinkActive="link-active" [routerLinkActiveOptions]="{exact:true}">All Events</h2>
+<h2 [routerLink]="['/events/new']" routerLinkActive="link-active">Create New Event</h2>
 <router-outlet></router-outlet>
