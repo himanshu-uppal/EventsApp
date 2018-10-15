@@ -18,7 +18,7 @@ export class EventsListComponent implements OnInit {
     this.events = this.eventService.getEvents()
   }
   handleThumbnailClick(eventName:string){
-    this.toastr.success(eventName)
+    //this.toastr.success(eventName)
   }
 
  
