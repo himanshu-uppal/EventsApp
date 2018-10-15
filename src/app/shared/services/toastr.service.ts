@@ -5,10 +5,12 @@ declare let toastr
 export class ToastrService{
 
     success(message:string,title?:string){
+        console.log('success')
         toastr.success(message,title)
     }
 
     info(message:string,title?:string){
+        console.log('info')
         toastr.info(message,title)
     }
 
