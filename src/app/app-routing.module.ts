@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import {
+  EventDetailsComponent,
+  EventRouteActivator
+} from './event-details/index'
+import {EventListResolver} from './shared/index'
+import {E404Component} from './error/index'
+
 import { RouterModule, Routes } from '@angular/router';
 import { EventsListComponent } from './events-list/events-list.component';
-import { EventDetailsComponent } from './event-details/event-details.component';
 import { CreateEventComponent } from './create-event/create-event.component';
-import { E404Component } from './error/e404.component';
-import { EventRouteActivator } from './event-details/event-route-activator.service';
-import { EventListResolver } from './shared/services/event-resolver.service';
+
 
 const routes: Routes = [
   {path:'events/new',component:CreateEventComponent,canDeactivate:['canDeactivateCreateEvent']},
