@@ -5,7 +5,7 @@ import {
   EventListResolver,
   EventService,
   ToastrService} from './shared/index'
-import {} from './user/index'
+import {AuthService,LoginComponent} from './user/index'
 import {
   EventDetailsComponent,
   EventRouteActivator
@@ -26,7 +26,8 @@ import { CreateEventComponent } from './create-event/create-event.component';
     EventThumbnailComponent,
     EventDetailsComponent,
     CreateEventComponent,
-    E404Component
+    E404Component,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +41,8 @@ import { CreateEventComponent } from './create-event/create-event.component';
     {
       provide:'canDeactivateCreateEvent',
       useValue:checkDirtyState
-    }
+    },
+    AuthService
   ],
   bootstrap: [EventsAppComponent]
 })
