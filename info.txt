@@ -42,3 +42,7 @@ npm install toastr --save
 
 this will give a toastr stylesheet and javascript file.
 load these files in angular in angular.json
+
+
+------ Routing -----
+ng generate module app-routing --flat --module=app 
