@@ -34,3 +34,11 @@ return
 
 --- Styling using ngStyle ----
 [ngStyle]={'propertyName1':condition ? style1 :style2,'propertyName2':.....}
+
+
+
+----installing toastr ---
+npm install toastr --save
+
+this will give a toastr stylesheet and javascript file.
+load these files in angular in angular.json
